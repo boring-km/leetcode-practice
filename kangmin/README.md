@@ -39,3 +39,7 @@
 [62. Unique Paths](https://leetcode.com/problems/unique-paths)
 
 [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)
+
+[73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)
+
+[76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)
