@@ -10,41 +10,14 @@ object ValidateBinarySearchTree {
         return recursive(root, null, null)
     }
 
-    private fun recursive(node: TreeNode?, leftParent: Int?, rightParent: Int?): Boolean {
-        var result = true
-        if (node?.`val` != null) {
-            if (node.left != null) {
 
-                if (leftParent != null && node.left!!.`val` <= leftParent) {
-                    return false
-                }
-
-                if (node.left!!.`val` < node.`val`) {
-                    result = recursive(node.left, null, Math.min(node.`val`, leftParent ?: Int.MAX_VALUE))
-                } else {
-                    return false
-                }
-            }
-            if (node.right != null) {
-
-                if (rightParent != null && rightParent <= node.right!!.`val`) {
-                    return false
-                }
-
-                if (node.`val` < node.right!!.`val`) {
-                    result = result && recursive(node.right, Math.min(node.`val`, rightParent ?: Int.MAX_VALUE), null)
-                } else {
-                    return false
-                }
-            }
-            if (node.left == null && node.right == null) {
-                if ((rightParent != null && node.`val` <= rightParent) || (leftParent != null && leftParent <= node.`val`)) {
-                    return false
-                }
-            }
-        }
-        return result
+    private fun recursive(node: TreeNode?, min: Int?, max: Int?): Boolean {
+        if (node == null) return true
+        if (min != null && node.`val` <= min) return false
+        if (max != null && node.`val` >= max) return false
+        return recursive(node.right, node.`val`, max) && recursive(node.left, min, node.`val`)
     }
+
 }
 
 fun main() {
