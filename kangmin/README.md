@@ -47,3 +47,9 @@
 [79. Word Search](https://leetcode.com/problems/word-search)
 
 [91. Decode Ways](https://leetcode.com/problems/decode-ways)
+
+[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)
+
+[100. Same Tree](https://leetcode.com/problems/same-tree)
+
+[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)
