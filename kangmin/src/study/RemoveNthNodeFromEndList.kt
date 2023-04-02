@@ -1,7 +1,7 @@
 package study
 
 
-class ListNode(var `val`: Int) {
+private class ListNode(var `val`: Int) {
     var next: ListNode? = null
 }
 private fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
