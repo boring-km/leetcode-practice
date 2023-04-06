@@ -77,3 +77,5 @@
 [152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray)
 
 [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)
+
+[190. Reverse Bits](https://leetcode.com/problems/reverse-bits)
