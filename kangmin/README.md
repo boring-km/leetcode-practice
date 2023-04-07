@@ -79,3 +79,5 @@
 [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)
 
 [190. Reverse Bits](https://leetcode.com/problems/reverse-bits)
+
+[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)
